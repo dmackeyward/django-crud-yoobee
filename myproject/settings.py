@@ -33,7 +33,7 @@ if 'PYTHONPATH' in os.environ:
     # Debug = False
     Debug = True
     # Ensure the below line is set to the region where your elastic beanstalk is set up
-    ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com','*']
+    ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com']
 else:
     # SECURITY WARNING: don't run with debug turned on in production!
     # We need this to work in development environment but not on testing or production environments
