@@ -10,4 +10,4 @@ class Command(BaseCommand):
 		# Supply an email address and a password to it
 		# So, now we have an admin user to manage our AWS RDS database
 		if not User.objects.filter(username="awsadmin").exists():
-			User.objects.create_superuser("awsadmin", "dmackeyward@gmail.com", "biggie9925")
+			User.objects.create_superuser("awsadmin", "dmackeyward@gmail.com", "aws123")
