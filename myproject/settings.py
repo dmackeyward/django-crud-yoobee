@@ -25,9 +25,21 @@ SECRET_KEY = 'iw+b1%p9&zw_+#gx+m&aw$gza2-_p6$03s3&4p+4kbd8%o0b_8'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 # commented 25.03
-DEBUG = True
+# DEBUG = True
 
-ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com', '*']
+# ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com', '*']
+
+if 'PYTHONPATH' in os.environ:
+    # Debug = False
+    Debug = True
+    # Ensure the below line is set to the region where your elastic beanstalk is set up
+    ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com','*']
+else:
+    # SECURITY WARNING: don't run with debug turned on in production!
+    # We need this to work in development environment but not on testing or production environments
+    # We do not want to reveal errors in our server-side to the public in case if that happens
+    DEBUG = True
+    ALLOWED_HOSTS = ['*']
 
 
 # Application definition
