@@ -27,7 +27,7 @@ SECRET_KEY = 'iw+b1%p9&zw_+#gx+m&aw$gza2-_p6$03s3&4p+4kbd8%o0b_8'
 # commented 25.03
 DEBUG = True
 
-ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com']
+ALLOWED_HOSTS = ['.ap-southeast-2.elasticbeanstalk.com', '*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'myproject',
     'tasks',
 ]
 
