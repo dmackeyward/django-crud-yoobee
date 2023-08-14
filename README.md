@@ -1,4 +1,4 @@
-# A Simple Example of Django CRUD (Create, Retrieve, Update and Delete) Application Using Functional Based Views
+# A Simple Example of Django CRUD (Create, Retrieve, Update and Delete) Application used to deploy to AWS as part of my Diploma of Software Development (Yoobee Colleges)
 
 We will use Django and functional based views to develop a simple application to allow one to create a new task, retrieve task list or a single task, update a task and delete a task. 
 
